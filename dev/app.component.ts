@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import {SimpleHTTPComponent} from "./simplehttp.component";
 
 
 
 @Component({
     selector: 'my-app',
+    directives: [SimpleHTTPComponent],
     template: `
-        <h1>Hi</h1>
-        <hr>      
+        <simple-http></simple-http>     
     `,
 })
 
