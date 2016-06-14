@@ -27,7 +27,7 @@ import {SpotifyService} from "../services/spotify.service";
 					<div class="col-sm-6 col-md-4" *ngFor="let t of results">
 						<div class="thumbnail">
 							<div class="content">
-								<img src="{{t.album.images[0].url}}" class="img-responsive">
+								<img src="{{t.album.images[1].url}}" class="img-responsive">
 								<div class="caption">
 									<h3>
 										<a [routerLink]="['/Artists', {id: t.artists[0].id}]">{{ t.artists[0].name }}</a>
