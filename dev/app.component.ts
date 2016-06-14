@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import {TransclusionApp} from "./components/transclusion.component";
 
 
 
 @Component({
     selector: 'my-app',
+    directives: [TransclusionApp],
     template: `
-        <h1>Hi</h1>
-        <hr>      
+        <transclusion-app></transclusion-app>    
     `,
 })
 
